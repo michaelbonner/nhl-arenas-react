@@ -128,6 +128,12 @@ function App() {
           })}
         </div>
       </div>
+      <div className="mt-4">
+        &copy;{new Date().getFullYear()}{" "}
+        <a className="underline" href="https://michaelbonner.dev">
+          Michael Bonner
+        </a>
+      </div>
     </div>
   );
 }
