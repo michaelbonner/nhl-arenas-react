@@ -1,24 +1,117 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import MyMapComponent from "./components/MyMapComponent";
+import arenas from "./data/arenas";
 
 function App() {
+  const [filteredResults, setFilteredResults] = useState(arenas);
+  const [activeFilter, setActiveFilter] = useState("all");
+
+  const filterResults = filter => {
+    setActiveFilter(filter);
+    switch (filter) {
+      case "visited":
+        setFilteredResults(
+          arenas.filter(arena => {
+            return arena.visited;
+          })
+        );
+        break;
+
+      case "not visited":
+        setFilteredResults(
+          arenas.filter(arena => {
+            return !arena.visited;
+          })
+        );
+        break;
+
+      default:
+        setFilteredResults(arenas);
+        break;
+    }
+
+    return true;
+  };
+
+  const filters = [
+    {
+      name: "All",
+      value: "all"
+    },
+    {
+      name: "Visited",
+      value: "visited"
+    },
+    {
+      name: "Not Visited",
+      value: "not visited"
+    }
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-4 container mx-auto">
+      <h1 className="text-3xl font-medium text-left my-4">
+        NHL Arenas I've Been To
+      </h1>
+      <MyMapComponent key="map" markers={filteredResults} />
+      <div className="flex flex-wrap">
+        {filters.map(filter => {
+          return (
+            <div className="flex-1">
+              <button
+                className={
+                  activeFilter === filter.value
+                    ? `w-full text-center block border rounded border-gray-500 py-2 px-4 bg-gray-500 hover:bg-gray-700 text-white`
+                    : `w-full text-center block border rounded border-white hover:border-gray-200 text-gray-500 hover:bg-gray-200 py-2 px-4`
+                }
+                type="button"
+                onClick={() => filterResults(filter.value)}
+              >
+                {filter.name}
+              </button>
+            </div>
+          );
+        })}
+      </div>
+      <div className="py-8">
+        <h2 className="text-xl font-medium uppercase">All Teams</h2>
+        {arenas.map(arena => {
+          return (
+            <div className="w-full py-4">
+              <h3 className="text-lg font-medium">
+                {arena.visited ? (
+                  <svg
+                    className="inline pr-2 text-green-500 fill-current"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="heroicon-ui"
+                      d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="inline pr-2 text-red-500 fill-current"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="heroicon-ui"
+                      d="M4.93 19.07A10 10 0 1 1 19.07 4.93 10 10 0 0 1 4.93 19.07zm1.41-1.41A8 8 0 1 0 17.66 6.34 8 8 0 0 0 6.34 17.66zM13.41 12l1.42 1.41a1 1 0 1 1-1.42 1.42L12 13.4l-1.41 1.42a1 1 0 1 1-1.42-1.42L10.6 12l-1.42-1.41a1 1 0 1 1 1.42-1.42L12 10.6l1.41-1.42a1 1 0 1 1 1.42 1.42L13.4 12z"
+                    />
+                  </svg>
+                )}
+                {arena.name}
+              </h3>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
