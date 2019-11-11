@@ -68,8 +68,8 @@ function App() {
               <button
                 className={
                   activeFilter === filter.value
-                    ? `w-full text-center block border rounded border-gray-500 py-2 px-4 bg-gray-500 hover:bg-gray-700 text-white`
-                    : `w-full text-center block border rounded border-white hover:border-gray-200 text-gray-500 hover:bg-gray-200 py-2 px-4`
+                    ? `w-full text-center block border rounded-b-lg border-green-500 py-2 px-4 bg-green-500 hover:bg-green-700 text-white`
+                    : `w-full text-center block border rounded-b-lg border-white hover:border-green-200 text-green-500 bg-green-100 hover:bg-green-200 py-2 px-4`
                 }
                 type="button"
                 onClick={() => filterResults(filter.value)}
