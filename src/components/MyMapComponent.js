@@ -6,6 +6,7 @@ import {
   GoogleMap,
   Marker
 } from "react-google-maps";
+import mapStyles from "../data/map-styles";
 
 const MyMapComponent = compose(
   withProps({
@@ -21,6 +22,7 @@ const MyMapComponent = compose(
   <GoogleMap
     defaultZoom={4}
     defaultCenter={{ lat: 38.5223955, lng: -98.6003791 }}
+    defaultOptions={{ styles: mapStyles }}
   >
     {props.markers.map(marker => {
       return (

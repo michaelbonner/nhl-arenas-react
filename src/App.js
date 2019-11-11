@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="p-4 container mx-auto">
-      <h1 className="text-3xl font-medium text-left my-4">
+      <h1 className="inline-block text-3xl font-medium text-left mt-4 mb-8 border-gray-800 border-b-2 uppercase">
         NHL Arenas I've Been To
       </h1>
       <MyMapComponent key="map" markers={filteredResults} />
@@ -68,8 +68,8 @@ function App() {
               <button
                 className={
                   activeFilter === filter.value
-                    ? `w-full text-center block border rounded-b-lg border-green-500 py-2 px-4 bg-green-500 hover:bg-green-700 text-white`
-                    : `w-full text-center block border rounded-b-lg border-white hover:border-green-200 text-green-500 bg-green-100 hover:bg-green-200 py-2 px-4`
+                    ? `w-full shadow-md text-center block rounded-b-lg py-2 px-4 bg-green-500 hover:bg-green-700 text-white`
+                    : `w-full shadow-md text-center block rounded-b-lg text-gray-300 bg-gray-700 hover:bg-gray-800 py-2 px-4`
                 }
                 type="button"
                 onClick={() => filterResults(filter.value)}
