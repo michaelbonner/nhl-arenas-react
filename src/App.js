@@ -66,11 +66,11 @@ function App() {
           return (
             <div className="flex-1" key={filter.value}>
               <button
-                className={
+                className={`w-full shadow-md text-center block rounded-b-lg focus:outline-none ${
                   activeFilter === filter.value
-                    ? `w-full shadow-md text-center block rounded-b-lg py-2 px-4 bg-green-500 hover:bg-green-700 text-white`
-                    : `w-full shadow-md text-center block rounded-b-lg text-gray-300 bg-gray-700 hover:bg-gray-800 py-2 px-4`
-                }
+                    ? `py-2 px-4 bg-green-500 hover:bg-green-700 text-white`
+                    : `text-gray-300 bg-gray-700 hover:bg-gray-800 py-2 px-4`
+                }`}
                 type="button"
                 onClick={() => filterResults(filter.value)}
               >
