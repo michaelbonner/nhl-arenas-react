@@ -257,6 +257,6 @@ const arenas = [
     false,
     49.8926174,
     -97.1437393
-  )
+  ),
 ];
 export default arenas;

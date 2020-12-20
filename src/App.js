@@ -6,12 +6,12 @@ function App() {
   const [filteredResults, setFilteredResults] = useState(arenas);
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const filterResults = filter => {
+  const filterResults = (filter) => {
     setActiveFilter(filter);
     switch (filter) {
       case "visited":
         setFilteredResults(
-          arenas.filter(arena => {
+          arenas.filter((arena) => {
             return arena.visited;
           })
         );
@@ -19,7 +19,7 @@ function App() {
 
       case "not visited":
         setFilteredResults(
-          arenas.filter(arena => {
+          arenas.filter((arena) => {
             return !arena.visited;
           })
         );
@@ -33,8 +33,8 @@ function App() {
     return true;
   };
 
-  const arenaInFiltered = arena => {
-    const filtered = filteredResults.filter(filterArena => {
+  const arenaInFiltered = (arena) => {
+    const filtered = filteredResults.filter((filterArena) => {
       return filterArena.name === arena.name;
     }).length;
     return filtered;
@@ -43,16 +43,16 @@ function App() {
   const filters = [
     {
       name: "All",
-      value: "all"
+      value: "all",
     },
     {
       name: "Visited",
-      value: "visited"
+      value: "visited",
     },
     {
       name: "Not Visited",
-      value: "not visited"
-    }
+      value: "not visited",
+    },
   ];
 
   return (
@@ -62,7 +62,7 @@ function App() {
       </h1>
       <MyMapComponent key="map" markers={filteredResults} />
       <div className="flex flex-wrap">
-        {filters.map(filter => {
+        {filters.map((filter) => {
           return (
             <div className="flex-1" key={filter.value}>
               <button
@@ -85,7 +85,7 @@ function App() {
           {activeFilter} Teams ({filteredResults.length})
         </h2>
         <div className="flex flex-wrap">
-          {arenas.map(arena => {
+          {arenas.map((arena) => {
             return (
               <div
                 key={arena.name}

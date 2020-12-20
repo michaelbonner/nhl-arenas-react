@@ -4,7 +4,7 @@ import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  Marker
+  Marker,
 } from "react-google-maps";
 import mapStyles from "../data/map-styles";
 
@@ -14,17 +14,17 @@ const MyMapComponent = compose(
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyAYGe5aS07NFhhITkwac8OQKazamMW3SNU&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `800px` }} />,
-    mapElement: <div style={{ height: `100%` }} />
+    mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
   withGoogleMap
-)(props => (
+)((props) => (
   <GoogleMap
     defaultZoom={4}
     defaultCenter={{ lat: 38.5223955, lng: -98.6003791 }}
     defaultOptions={{ styles: mapStyles }}
   >
-    {props.markers.map(marker => {
+    {props.markers.map((marker) => {
       return (
         <Marker
           icon={marker.icon}
