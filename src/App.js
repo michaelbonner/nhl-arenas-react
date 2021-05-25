@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MyMapComponent from "./components/MyMapComponent";
+import Map from "./components/Map";
 import arenas from "./data/arenas";
 
 function App() {
@@ -60,7 +60,7 @@ function App() {
       <h1 className="inline-block text-3xl font-medium text-left mt-4 mb-8 border-gray-800 border-b-2 uppercase">
         NHL Arenas I've Been To
       </h1>
-      <MyMapComponent key="map" markers={filteredResults} />
+      <Map key="map" markers={filteredResults} />
       <div className="flex flex-wrap">
         {filters.map((filter) => {
           return (

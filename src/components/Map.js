@@ -8,12 +8,18 @@ import {
 } from "react-google-maps";
 import mapStyles from "../data/map-styles";
 
-const MyMapComponent = compose(
+const Map = compose(
   withProps({
     googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_MAPS_KEY}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `800px` }} />,
-    mapElement: <div style={{ height: `100%` }} />,
+    mapElement: (
+      <div
+        style={{
+          height: `100%`,
+        }}
+      />
+    ),
   }),
   withScriptjs,
   withGoogleMap
@@ -35,4 +41,4 @@ const MyMapComponent = compose(
   </GoogleMap>
 ));
 
-export default MyMapComponent;
+export default Map;
