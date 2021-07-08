@@ -179,9 +179,9 @@ const arenas = [
     -75.9184263
   ),
   new Arena(
-    "Philidelphia Flyers",
-    "/images/logos/philidelphia-flyers.svg",
-    "/images/icons/philidelphia-flyers.png",
+    "Philadelphia Flyers",
+    "/images/logos/philadelphia-flyers.svg",
+    "/images/icons/philadelphia-flyers.png",
     true,
     39.9011809,
     -75.1742469

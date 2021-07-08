@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import Map from "./components/Map";
-import arenas from "./data/arenas";
+import Head from "next/head";
+import { useState } from "react";
+import Map from "../components/map";
+import arenas from "../data/arenas";
 
-function App() {
+export default function Home() {
   const [filteredResults, setFilteredResults] = useState(arenas);
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const filterResults = (filter) => {
+  const filterResults = (filter: string) => {
     setActiveFilter(filter);
     switch (filter) {
       case "visited":
@@ -33,7 +34,7 @@ function App() {
     return true;
   };
 
-  const arenaInFiltered = (arena) => {
+  const arenaInFiltered = (arena: any) => {
     const filtered = filteredResults.filter((filterArena) => {
       return filterArena.name === arena.name;
     }).length;
@@ -57,8 +58,19 @@ function App() {
 
   return (
     <div className="p-4 container mx-auto">
+      <Head>
+        <title>NHL Arenas I&apos;ve Been To</title>
+        <meta
+          name="description"
+          content="My way of keeping track of which NHL arenas I've been to"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo192.png" />
+        <meta name="theme-color" content="#101727" />
+      </Head>
+
       <h1 className="inline-block text-3xl font-medium text-left mt-4 mb-8 border-gray-800 border-b-2 uppercase">
-        NHL Arenas I've Been To
+        NHL Arenas I&apos;ve Been To
       </h1>
       <Map key="map" markers={filteredResults} />
       <div className="flex flex-wrap">
@@ -137,5 +149,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
