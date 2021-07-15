@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { compose, withProps } from "recompose";
 import {
   withScriptjs,
@@ -23,22 +23,26 @@ const Map = compose(
   }),
   withScriptjs,
   withGoogleMap
-)((props) => (
-  <GoogleMap
-    defaultZoom={4}
-    defaultCenter={{ lat: 38.5223955, lng: -98.6003791 }}
-    defaultOptions={{ styles: mapStyles, disableDefaultUI: true }}
-  >
-    {props.markers.map((marker) => {
-      return (
-        <Marker
-          icon={marker.icon}
-          key={marker.name}
-          position={{ lat: marker.lat, lng: marker.lng }}
-        />
-      );
-    })}
-  </GoogleMap>
-));
+)(({ markers }) => {
+  return (
+    <GoogleMap
+      defaultZoom={4}
+      defaultCenter={{ lat: 38.5223955, lng: -98.6003791 }}
+      defaultOptions={{ styles: mapStyles, disableDefaultUI: true }}
+    >
+      {markers &&
+        markers.length > 0 &&
+        markers.map((marker) => {
+          return (
+            <Marker
+              icon={marker.icon}
+              key={marker.name}
+              position={{ lat: marker.lat, lng: marker.lng }}
+            />
+          );
+        })}
+    </GoogleMap>
+  );
+});
 
 export default Map;
