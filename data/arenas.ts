@@ -194,6 +194,14 @@ const arenas = [
     lng: -121.900262,
   },
   {
+    name: "Seattle Kraken",
+    logo: "/images/logos/seattle-kraken.svg",
+    icon: "/images/icons/seattle-kraken.png",
+    visited: false,
+    lat: 47.6220713,
+    lng: -122.3540714,
+  },
+  {
     name: "St Louis Blues",
     logo: "/images/logos/st-louis-blues.svg",
     icon: "/images/icons/st-louis-blues.png",
