@@ -1,3 +1,9 @@
+# NHL Arenas I've Been To
+
+I'm trying to visit the arenas of all all 32 NHL teams. This just helps me keep track of which ones I have been to.
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
