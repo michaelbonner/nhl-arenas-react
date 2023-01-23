@@ -15,15 +15,10 @@ const Map = ({ markers }: Props) => {
     id: "google-map-script",
     googleMapsApiKey: process.env.NEXT_PUBLIC_MAPS_KEY || "",
   });
-  const [map, setMap] = useState(null);
 
   return isLoaded ? (
     <GoogleMap
-      mapContainerStyle={{
-        width: "100%",
-        height: "90vh",
-        maxHeight: `800px`,
-      }}
+      mapContainerClassName="aspect-square lg:aspect-video"
       center={{ lat: 38.5223955, lng: -98.6003791 }}
       zoom={4}
       options={{

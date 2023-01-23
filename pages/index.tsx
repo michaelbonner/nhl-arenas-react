@@ -72,7 +72,9 @@ export default function Home() {
       <h1 className="inline-block text-3xl font-medium text-left mt-4 mb-8 border-gray-800 border-b-2 uppercase">
         NHL Arenas I&apos;ve Been To
       </h1>
-      <Map key="map" markers={filteredResults} />
+      <div className="aspect-square lg:aspect-video">
+        <Map key="map" markers={filteredResults} />
+      </div>
       <div className="flex flex-wrap">
         {filters.map((filter) => {
           return (
