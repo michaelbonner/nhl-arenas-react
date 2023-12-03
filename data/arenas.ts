@@ -5,7 +5,7 @@ const arenas = [
     name: "Anaheim Ducks",
     logo: "/images/logos/anaheim-ducks.svg",
     icon: "/images/icons/anaheim-ducks.png",
-    visited: false,
+    visited: true,
     lat: 33.8078363,
     lng: -117.8786819,
   },
