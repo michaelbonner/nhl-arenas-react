@@ -226,6 +226,14 @@ const arenas = [
     lng: -79.3790989,
   },
   {
+    name: "Utah Something",
+    logo: "/images/logos/utah-something.svg",
+    icon: "/images/icons/utah-something.png",
+    visited: false,
+    lat: 40.7682681,
+    lng: -111.9010874,
+  },
+  {
     name: "Vancouver Canucks",
     logo: "/images/logos/vancouver-canucks.svg",
     icon: "/images/icons/vancouver-canucks.png",
