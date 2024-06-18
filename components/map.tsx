@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import mapStyles from "../data/map-styles";
-
-import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import { Arena } from "../interfaces/arena";
 
 declare const window: any;
@@ -21,9 +18,7 @@ const Map = ({ markers }: Props) => {
       mapContainerClassName="aspect-square lg:aspect-video"
       center={{ lat: 38.5223955, lng: -98.6003791 }}
       zoom={4}
-      options={{
-        styles: mapStyles,
-      }}
+      options={{ mapId: "57cb3890fb527662" }}
     >
       {markers &&
         markers.length > 0 &&
