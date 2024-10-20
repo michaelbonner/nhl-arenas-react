@@ -229,7 +229,7 @@ const arenas = [
     name: "Utah Hockey Club",
     logo: "/images/logos/utah-hockey-club.svg",
     icon: "/images/icons/utah-hockey-club.png",
-    visited: false,
+    visited: true,
     lat: 40.7682681,
     lng: -111.9010874,
   },
