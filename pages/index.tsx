@@ -57,7 +57,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="p-4 container mx-auto">
+    <div className="container p-4 mx-auto">
       <Head>
         <title>NHL Arenas I&apos;ve Been To</title>
         <meta
@@ -69,7 +69,7 @@ export default function Home() {
         <meta name="theme-color" content="#101727" />
       </Head>
 
-      <h1 className="inline-block text-3xl font-medium text-left mt-4 mb-8 border-gray-800 border-b-2 uppercase">
+      <h1 className="inline-block mt-4 mb-8 text-3xl font-medium text-left uppercase border-b-2 border-gray-800">
         NHL Arenas I&apos;ve Been To
       </h1>
       <div className="aspect-square lg:aspect-video">
