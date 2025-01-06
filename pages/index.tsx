@@ -143,7 +143,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-4">
-        &copy;{new Date().getFullYear()}{" "}
+        &copy; 2019-{new Date().getFullYear()}{" "}
         <a className="underline" href="https://michaelbonner.dev">
           Michael Bonner
         </a>
