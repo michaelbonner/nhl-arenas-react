@@ -1,9 +1,10 @@
-import Head from "next/head";
+"use client";
+
 import { useState } from "react";
 import Map from "../components/map";
 import arenas from "../data/arenas";
 
-export default function Home() {
+export default function MapLayout() {
   const [filteredResults, setFilteredResults] = useState(arenas);
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -57,21 +58,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="container p-4 mx-auto">
-      <Head>
-        <title>NHL Arenas I&apos;ve Been To</title>
-        <meta
-          name="description"
-          content="My way of keeping track of which NHL arenas I've been to"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo192.png" />
-        <meta name="theme-color" content="#101727" />
-      </Head>
-
-      <h1 className="inline-block mt-4 mb-8 text-3xl font-medium text-left uppercase border-b-2 border-gray-800">
-        NHL Arenas I&apos;ve Been To
-      </h1>
+    <div>
       <div className="aspect-square lg:aspect-video">
         <Map key="map" markers={filteredResults} />
       </div>
@@ -82,8 +69,8 @@ export default function Home() {
               <button
                 className={`w-full shadow-md text-center block rounded-b-lg focus:outline-none ${
                   activeFilter === filter.value
-                    ? `py-2 px-4 bg-green-500 hover:bg-green-700 text-white`
-                    : `text-gray-300 bg-gray-700 hover:bg-gray-800 py-2 px-4`
+                    ? `py-2 px-4 bg-green-700 hover:bg-green-800 text-white`
+                    : `text-gray-300 bg-gray-800 hover:bg-gray-900 py-2 px-4`
                 }`}
                 type="button"
                 onClick={() => filterResults(filter.value)}
@@ -141,12 +128,6 @@ export default function Home() {
             );
           })}
         </div>
-      </div>
-      <div className="mt-4">
-        &copy; 2019-{new Date().getFullYear()}{" "}
-        <a className="underline" href="https://michaelbonner.dev">
-          Michael Bonner
-        </a>
       </div>
     </div>
   );
