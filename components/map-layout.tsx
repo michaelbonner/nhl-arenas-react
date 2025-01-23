@@ -67,7 +67,7 @@ export default function MapLayout() {
           return (
             <div className="flex-1" key={filter.value}>
               <button
-                className={`w-full shadow-md text-center block rounded-b-lg focus:outline-none ${
+                className={`w-full shadow-md text-center block rounded-b-lg focus:outline-hidden ${
                   activeFilter === filter.value
                     ? `py-2 px-4 bg-green-700 hover:bg-green-800 text-white`
                     : `text-gray-300 bg-gray-800 hover:bg-gray-900 py-2 px-4`
