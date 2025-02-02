@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "out": "bun outdated",
+    "up": "bun update"
   },
   "dependencies": {
     "@vis.gl/react-google-maps": "^1.4.2",
