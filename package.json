@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build --turbo",
+    "start": "next start --turbo",
     "lint": "next lint",
     "out": "bun outdated",
     "up": "bun update"
