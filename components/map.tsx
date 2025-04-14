@@ -1,5 +1,6 @@
 import { AdvancedMarker, APIProvider, Map } from "@vis.gl/react-google-maps";
 import { Arena } from "../interfaces/arena";
+import Image from "next/image";
 
 interface Props {
   markers: Arena[];
@@ -27,7 +28,12 @@ const MapComponent = ({ markers }: Props) => {
                 position={{ lat: marker.lat, lng: marker.lng }}
               >
                 <div>
-                  <img src={marker.icon} alt={marker.name} />
+                  <Image
+                    src={marker.icon.src}
+                    alt={marker.name}
+                    width={marker.icon.width}
+                    height={marker.icon.height}
+                  />
                 </div>
               </AdvancedMarker>
             );

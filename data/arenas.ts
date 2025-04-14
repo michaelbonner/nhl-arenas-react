@@ -4,7 +4,11 @@ const arenas = [
   {
     name: "Anaheim Ducks",
     logo: "/images/logos/anaheim-ducks.svg",
-    icon: "/images/icons/anaheim-ducks.png",
+    icon: {
+      src: "/images/icons/anaheim-ducks.png",
+      width: 40,
+      height: 22,
+    },
     visited: true,
     lat: 33.8078363,
     lng: -117.8786819,
@@ -12,7 +16,11 @@ const arenas = [
   {
     name: "Arizona Coyotes",
     logo: "/images/logos/arizona-coyotes.svg",
-    icon: "/images/icons/arizona-coyotes.png",
+    icon: {
+      src: "/images/icons/arizona-coyotes.png",
+      width: 35,
+      height: 35,
+    },
     visited: true,
     lat: 33.532237,
     lng: -112.263445,
@@ -20,7 +28,11 @@ const arenas = [
   {
     name: "Boston Bruins",
     logo: "/images/logos/boston-bruins.svg",
-    icon: "/images/icons/boston-bruins.png",
+    icon: {
+      src: "/images/icons/boston-bruins.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 42.3661881,
     lng: -71.0643422,
@@ -28,7 +40,11 @@ const arenas = [
   {
     name: "Buffalo Sabres",
     logo: "/images/logos/buffalo-sabres.svg",
-    icon: "/images/icons/buffalo-sabres.png",
+    icon: {
+      src: "/images/icons/buffalo-sabres.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 42.8749968,
     lng: -78.8761674,
@@ -36,7 +52,11 @@ const arenas = [
   {
     name: "Calgary Flames",
     logo: "/images/logos/calgary-flames.svg",
-    icon: "/images/icons/calgary-flames.png",
+    icon: {
+      src: "/images/icons/calgary-flames.png",
+      width: 39,
+      height: 35,
+    },
     visited: false,
     lat: 51.0373732,
     lng: -114.054265,
@@ -44,7 +64,11 @@ const arenas = [
   {
     name: "Carolina Hurricanes",
     logo: "/images/logos/carolina-hurricanes.svg",
-    icon: "/images/icons/carolina-hurricanes.png",
+    icon: {
+      src: "/images/icons/carolina-hurricanes.png",
+      width: 55,
+      height: 35,
+    },
     visited: false,
     lat: 35.8033394,
     lng: -78.7217946,
@@ -52,7 +76,11 @@ const arenas = [
   {
     name: "Chicago Blackhawks",
     logo: "/images/logos/chicago-blackhawks.svg",
-    icon: "/images/icons/chicago-blackhawks.png",
+    icon: {
+      src: "/images/icons/chicago-blackhawks.png",
+      width: 39,
+      height: 35,
+    },
     visited: true,
     lat: 41.8806991,
     lng: -87.6762708,
@@ -60,7 +88,11 @@ const arenas = [
   {
     name: "Colorado Avalanche",
     logo: "/images/logos/colorado-avalanche.svg",
-    icon: "/images/icons/colorado-avalanche.png",
+    icon: {
+      src: "/images/icons/colorado-avalanche.png",
+      width: 44,
+      height: 35,
+    },
     visited: true,
     lat: 39.7486565,
     lng: -105.0097968,
@@ -68,7 +100,11 @@ const arenas = [
   {
     name: "Columbus Blue Jackets",
     logo: "/images/logos/columbus-blue-jackets.svg",
-    icon: "/images/icons/columbus-blue-jackets.png",
+    icon: {
+      src: "/images/icons/columbus-blue-jackets.png",
+      width: 39,
+      height: 35,
+    },
     visited: false,
     lat: 39.9694406,
     lng: -83.0086341,
@@ -76,7 +112,11 @@ const arenas = [
   {
     name: "Dallas Stars",
     logo: "/images/logos/dallas-stars.svg",
-    icon: "/images/icons/dallas-stars.png",
+    icon: {
+      src: "/images/icons/dallas-stars.png",
+      width: 44,
+      height: 35,
+    },
     visited: false,
     lat: 33.0188211,
     lng: -96.8412506,
@@ -84,7 +124,11 @@ const arenas = [
   {
     name: "Detroit Red Wings",
     logo: "/images/logos/detroit-red-wings.svg",
-    icon: "/images/icons/detroit-red-wings.png",
+    icon: {
+      src: "/images/icons/detroit-red-wings.png",
+      width: 48,
+      height: 35,
+    },
     visited: true,
     lat: 42.3251899,
     lng: -83.1213998,
@@ -92,7 +136,11 @@ const arenas = [
   {
     name: "Edmonton Oilers",
     logo: "/images/logos/edmonton-oilers.svg",
-    icon: "/images/icons/edmonton-oilers.png",
+    icon: {
+      src: "/images/icons/edmonton-oilers.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 53.5469485,
     lng: -113.4982859,
@@ -100,7 +148,11 @@ const arenas = [
   {
     name: "Florida Panthers",
     logo: "/images/logos/florida-panthers.svg",
-    icon: "/images/icons/florida-panthers.png",
+    icon: {
+      src: "/images/icons/florida-panthers.png",
+      width: 31,
+      height: 35,
+    },
     visited: false,
     lat: 26.1584427,
     lng: -80.3278089,
@@ -108,7 +160,11 @@ const arenas = [
   {
     name: "Los Angeles Kings",
     logo: "/images/logos/los-angeles-kings.svg",
-    icon: "/images/icons/los-angeles-kings.png",
+    icon: {
+      src: "/images/icons/los-angeles-kings.png",
+      width: 31,
+      height: 35,
+    },
     visited: true,
     lat: 34.0430175,
     lng: -118.2694481,
@@ -116,7 +172,11 @@ const arenas = [
   {
     name: "Minnesota Wild",
     logo: "/images/logos/minnesota-wild.svg",
-    icon: "/images/icons/minnesota-wild.png",
+    icon: {
+      src: "/images/icons/minnesota-wild.png",
+      width: 55,
+      height: 35,
+    },
     visited: false,
     lat: 44.944906,
     lng: -93.103343,
@@ -124,7 +184,11 @@ const arenas = [
   {
     name: "Montreal Canadiens",
     logo: "/images/logos/montreal-canadiens.svg",
-    icon: "/images/icons/montreal-canadiens.png",
+    icon: {
+      src: "/images/icons/montreal-canadiens.png",
+      width: 50,
+      height: 35,
+    },
     visited: false,
     lat: 45.4955108,
     lng: -73.5695708,
@@ -132,7 +196,11 @@ const arenas = [
   {
     name: "Nashville Predators",
     logo: "/images/logos/nashville-predators.svg",
-    icon: "/images/icons/nashville-predators.png",
+    icon: {
+      src: "/images/icons/nashville-predators.png",
+      width: 58,
+      height: 35,
+    },
     visited: false,
     lat: 36.1595351,
     lng: -86.7810777,
@@ -140,7 +208,11 @@ const arenas = [
   {
     name: "New Jersey Devils",
     logo: "/images/logos/new-jersey-devils.svg",
-    icon: "/images/icons/new-jersey-devils.png",
+    icon: {
+      src: "/images/icons/new-jersey-devils.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 40.7336167,
     lng: -74.17115,
@@ -148,7 +220,11 @@ const arenas = [
   {
     name: "New York Islanders",
     logo: "/images/logos/new-york-islanders.svg",
-    icon: "/images/icons/new-york-islanders.png",
+    icon: {
+      src: "/images/icons/new-york-islanders.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 40.6824952,
     lng: -73.9772236,
@@ -156,7 +232,11 @@ const arenas = [
   {
     name: "New York Rangers",
     logo: "/images/logos/new-york-rangers.svg",
-    icon: "/images/icons/new-york-rangers.png",
+    icon: {
+      src: "/images/icons/new-york-rangers.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 40.7505045,
     lng: -73.9956327,
@@ -164,7 +244,11 @@ const arenas = [
   {
     name: "Ottowa Senators",
     logo: "/images/logos/ottowa-senators.svg",
-    icon: "/images/icons/ottowa-senators.png",
+    icon: {
+      src: "/images/icons/ottowa-senators.png",
+      width: 31,
+      height: 35,
+    },
     visited: false,
     lat: 45.3348021,
     lng: -75.9184263,
@@ -172,7 +256,11 @@ const arenas = [
   {
     name: "Philadelphia Flyers",
     logo: "/images/logos/philadelphia-flyers.svg",
-    icon: "/images/icons/philadelphia-flyers.png",
+    icon: {
+      src: "/images/icons/philadelphia-flyers.png",
+      width: 40,
+      height: 27,
+    },
     visited: true,
     lat: 39.9011809,
     lng: -75.1742469,
@@ -180,7 +268,11 @@ const arenas = [
   {
     name: "Pittsburgh Penguins",
     logo: "/images/logos/pittsburgh-penguins.svg",
-    icon: "/images/icons/pittsburgh-penguins.png",
+    icon: {
+      src: "/images/icons/pittsburgh-penguins.png",
+      width: 35,
+      height: 35,
+    },
     visited: true,
     lat: 40.4395148,
     lng: -79.9915569,
@@ -188,7 +280,11 @@ const arenas = [
   {
     name: "San Jose Sharks",
     logo: "/images/logos/san-jose-sharks.svg",
-    icon: "/images/icons/san-jose-sharks.png",
+    icon: {
+      src: "/images/icons/san-jose-sharks.png",
+      width: 42,
+      height: 35,
+    },
     visited: true,
     lat: 37.3260746,
     lng: -121.900262,
@@ -196,7 +292,11 @@ const arenas = [
   {
     name: "Seattle Kraken",
     logo: "/images/logos/seattle-kraken.svg",
-    icon: "/images/icons/seattle-kraken.png",
+    icon: {
+      src: "/images/icons/seattle-kraken.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 47.6220713,
     lng: -122.3540714,
@@ -204,7 +304,11 @@ const arenas = [
   {
     name: "St Louis Blues",
     logo: "/images/logos/st-louis-blues.svg",
-    icon: "/images/icons/st-louis-blues.png",
+    icon: {
+      src: "/images/icons/st-louis-blues.png",
+      width: 40,
+      height: 31,
+    },
     visited: true,
     lat: 38.6265853,
     lng: -90.2051319,
@@ -212,7 +316,11 @@ const arenas = [
   {
     name: "Tampa Bay Lightning",
     logo: "/images/logos/tampa-bay-lightning.svg",
-    icon: "/images/icons/tampa-bay-lightning.png",
+    icon: {
+      src: "/images/icons/tampa-bay-lightning.png",
+      width: 39,
+      height: 35,
+    },
     visited: true,
     lat: 27.9835375,
     lng: -82.4843154,
@@ -220,7 +328,11 @@ const arenas = [
   {
     name: "Toronto Maple Leafs",
     logo: "/images/logos/toronto-maple-leafs.svg",
-    icon: "/images/icons/toronto-maple-leafs.png",
+    icon: {
+      src: "/images/icons/toronto-maple-leafs.png",
+      width: 31,
+      height: 35,
+    },
     visited: false,
     lat: 43.6434661,
     lng: -79.3790989,
@@ -228,7 +340,11 @@ const arenas = [
   {
     name: "Utah Hockey Club",
     logo: "/images/logos/utah-hockey-club.svg",
-    icon: "/images/icons/utah-hockey-club.png",
+    icon: {
+      src: "/images/icons/utah-hockey-club.png",
+      width: 35,
+      height: 35,
+    },
     visited: true,
     lat: 40.7682681,
     lng: -111.9010874,
@@ -236,7 +352,11 @@ const arenas = [
   {
     name: "Vancouver Canucks",
     logo: "/images/logos/vancouver-canucks.svg",
-    icon: "/images/icons/vancouver-canucks.png",
+    icon: {
+      src: "/images/icons/vancouver-canucks.png",
+      width: 39,
+      height: 35,
+    },
     visited: false,
     lat: 49.2778449,
     lng: -123.1109512,
@@ -244,7 +364,11 @@ const arenas = [
   {
     name: "Vegas Golden Knights",
     logo: "/images/logos/vegas-golden-knights.svg",
-    icon: "/images/icons/vegas-golden-knights.png",
+    icon: {
+      src: "/images/icons/vegas-golden-knights.png",
+      width: 26,
+      height: 35,
+    },
     visited: true,
     lat: 36.1028767,
     lng: -115.1784324,
@@ -252,7 +376,11 @@ const arenas = [
   {
     name: "Washington Capitals",
     logo: "/images/logos/washington-capitals.svg",
-    icon: "/images/icons/washington-capitals.png",
+    icon: {
+      src: "/images/icons/washington-capitals.png",
+      width: 55,
+      height: 35,
+    },
     visited: true,
     lat: 38.8884197,
     lng: -77.1006833,
@@ -260,7 +388,11 @@ const arenas = [
   {
     name: "Winnipeg Jets",
     logo: "/images/logos/winnipeg-jets.svg",
-    icon: "/images/icons/winnipeg-jets.png",
+    icon: {
+      src: "/images/icons/winnipeg-jets.png",
+      width: 35,
+      height: 35,
+    },
     visited: false,
     lat: 49.8926174,
     lng: -97.1437393,
