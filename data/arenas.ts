@@ -342,7 +342,7 @@ const arenas = [
     logo: "/images/logos/utah-mammoth.svg",
     icon: {
       src: "/images/icons/utah-mammoth.png",
-      width: 35,
+      width: 47,
       height: 35,
     },
     visited: true,
