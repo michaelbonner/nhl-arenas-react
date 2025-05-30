@@ -338,10 +338,10 @@ const arenas = [
     lng: -79.3790989,
   },
   {
-    name: "Utah Hockey Club",
-    logo: "/images/logos/utah-hockey-club.svg",
+    name: "Utah Mammoth",
+    logo: "/images/logos/utah-mammoth.svg",
     icon: {
-      src: "/images/icons/utah-hockey-club.png",
+      src: "/images/icons/utah-mammoth.png",
       width: 35,
       height: 35,
     },
