@@ -8,7 +8,8 @@
     "start": "next start --turbo",
     "lint": "next lint",
     "out": "bun outdated",
-    "up": "bun update"
+    "up": "bun update",
+    "preinstall": "npx only-allow bun"
   },
   "dependencies": {
     "@vis.gl/react-google-maps": "^1.5.3",
@@ -18,7 +19,6 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.10",
-    "@types/node": "^22.15.31",
     "@types/react": "^19.1.8",
     "eslint-config-next": "^15.3.3",
     "postcss": "^8.5.5",
