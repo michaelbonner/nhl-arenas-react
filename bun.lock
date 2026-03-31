@@ -5,7 +5,7 @@
     "": {
       "name": "nhl-arenas-next",
       "dependencies": {
-        "@vis.gl/react-google-maps": "^1.7.1",
+        "@vis.gl/react-google-maps": "^1.8.1",
         "next": "^16.2.1",
         "react": "^19.2.4",
         "react-dom": "^19.2.4",
@@ -320,7 +320,7 @@
 
     "@unrs/resolver-binding-win32-x64-msvc": ["@unrs/resolver-binding-win32-x64-msvc@1.11.1", "", { "os": "win32", "cpu": "x64" }, "sha512-lrW200hZdbfRtztbygyaq/6jP6AKE8qQN2KvPcJ+x7wiD038YtnYtZ82IMNJ69GJibV7bwL3y9FgK+5w/pYt6g=="],
 
-    "@vis.gl/react-google-maps": ["@vis.gl/react-google-maps@1.8.0", "", { "dependencies": { "@googlemaps/js-api-loader": "^2.0.2", "@types/google.maps": "^3.54.10", "fast-deep-equal": "^3.1.3", "vite": "^8.0.0" }, "peerDependencies": { "react": ">=16.8.0 || ^19.0 || ^19.0.0-rc", "react-dom": ">=16.8.0 || ^19.0 || ^19.0.0-rc" } }, "sha512-/Iur5Fpm+9EfkTogRXcWZkd8fcoBByiUm84E8avPMhHpQe9E3n7kLasGizBzKeRGwDqArd1MCxV8ls8RXjqr4g=="],
+    "@vis.gl/react-google-maps": ["@vis.gl/react-google-maps@1.8.1", "", { "dependencies": { "@googlemaps/js-api-loader": "^2.0.2", "@types/google.maps": "^3.54.10", "fast-deep-equal": "^3.1.3", "vite": "^8.0.0" }, "peerDependencies": { "react": ">=16.8.0 || ^19.0 || ^19.0.0-rc", "react-dom": ">=16.8.0 || ^19.0 || ^19.0.0-rc" } }, "sha512-rlS92E/YpQNyUtnlBKT66amCbO4qvSsf+xMmxHiaEI3pAtQpHXbSlL5fYSpkPpLE5QUfzFP+vWv0mhMeNLKQ6A=="],
 
     "acorn": ["acorn@8.15.0", "", { "bin": { "acorn": "bin/acorn" } }, "sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg=="],
 
