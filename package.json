@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build --turbo",
     "start": "next start --turbo",
-    "lint": "next lint",
+    "lint": "vp lint",
     "out": "bun outdated",
     "up": "bun update",
     "preinstall": "npx only-allow bun",
