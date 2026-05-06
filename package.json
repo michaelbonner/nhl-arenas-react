@@ -11,6 +11,7 @@
     "up": "bun update",
     "preinstall": "npx only-allow bun",
     "prepare": "vp config",
+    "check": "vp check",
     "format": "vp check --fix"
   },
   "dependencies": {
