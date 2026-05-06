@@ -26,10 +26,7 @@ const MapComponent = ({ markers }: Props) => {
           markers.length > 0 &&
           markers.map((marker) => {
             return (
-              <AdvancedMarker
-                key={marker.name}
-                position={{ lat: marker.lat, lng: marker.lng }}
-              >
+              <AdvancedMarker key={marker.name} position={{ lat: marker.lat, lng: marker.lng }}>
                 <div className="rounded-2xl bg-gray-100/90 size-10 p-1 shadow-sm group flex items-center justify-center border border-gray-200">
                   <Image
                     className="max-w-6 max-h-6 size-full object-contain object-center group-hover:scale-110 transition-all duration-300"

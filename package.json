@@ -10,7 +10,8 @@
     "out": "bun outdated",
     "up": "bun update",
     "preinstall": "npx only-allow bun",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "format": "vp check --fix"
   },
   "dependencies": {
     "@vis.gl/react-google-maps": "^1.8.3",

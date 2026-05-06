@@ -15,7 +15,7 @@ export default function MapLayout() {
         setFilteredResults(
           arenas.filter((arena) => {
             return arena.visited;
-          })
+          }),
         );
         break;
 
@@ -23,7 +23,7 @@ export default function MapLayout() {
         setFilteredResults(
           arenas.filter((arena) => {
             return !arena.visited;
-          })
+          }),
         );
         break;
 
